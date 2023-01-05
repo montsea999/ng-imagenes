@@ -1,0 +1,17 @@
+<div class="container mt-1">
+  <span class="badge container bg-light p-5">
+    <div class="row">
+      <form class="form-group d-flex bg-light">
+        <div class="col-lg-10">
+          <input type="text" name="nameImg" [(ngModel)]="nameImg" class="form-control form-control-lg p-2 mx-5"
+            placeholder="Busca una imagen de ..">
+        </div>
+        <div class="col-lg-2 mx-2">
+          <button type="submit" (click)="searchImg()" class="btn btn-lg btn-primary mx-5 px-2"
+            type="button">Buscar</button>
+        </div>
+      </form>
+      <img *ngIf="background" src="../../../assets/fondo2.jpg" class="img p-5" alt="imagen mesa de trabajo">
+    </div>
+  </span>
+</div>
